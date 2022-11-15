@@ -15,7 +15,7 @@ const risultato = palindroma(parolaUser);
         let worldSplitInv = worldSplit.reverse('');
         console.log(worldSplitInv);
         // Rimetto insieme la parola invertita
-        var worldInv = worldSplitInv.join('');
+        let worldInv = worldSplitInv.join('');
         console.log(worldInv);
         // Confronto le due parole e riporto il risultato alla costante "risultato" con return
         if(parolaUser == worldInv){
