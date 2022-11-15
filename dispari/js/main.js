@@ -5,9 +5,10 @@ console.log("parola", parolaUser);
     //     parolaUser = prompt("pari o dispari?");
     // }
 
-// Richiesta numero
+// Richiesta numero !(ancora senza verifica)
 let numeroUser = parseInt(prompt("scegli un numero da 1 a 5"));
 console.log("numero", numeroUser);
+
 // Valore per riconoscere il pari o dispari del prompt dell'utente
 let userPoD = 0;
 
