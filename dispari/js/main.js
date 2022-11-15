@@ -1,12 +1,19 @@
 // Richiesta pari o dispari !(ancora senza verifica)
 let parolaUser = prompt("pari o dispari?");
-console.log("parola", parolaUser);
-    // if(parolaUser != ("pari" || "dispari")){
-    //     parolaUser = prompt("pari o dispari?");
-    // }
+console.log("hai scelto", parolaUser);
 
-// Richiesta numero !(ancora senza verifica)
+// Richiesta numero
 let numeroUser = parseInt(prompt("scegli un numero da 1 a 5"));
+// Range scelta numeri utente
+while (
+    isNaN(numeroUser) || 
+        numeroUser <1 || numeroUser >5
+    )
+    {
+        alert ("Un numero... e sopratutto da 1 a 5");
+        numeroUser = parseInt(prompt("scegli un numero da 1 a 5"));
+    };
+
 console.log("numero", numeroUser);
 
 // Valore per riconoscere il pari o dispari del prompt dell'utente
@@ -19,7 +26,7 @@ else if(parolaUser == "dispari"){
     userPoD = 0;
 }
 
-console.log("valore pari [1] o dispari[0]", userPoD)
+console.log("valore pari [1] o dispari[0] =", userPoD)
 
 
 // Tutto in una funzione
